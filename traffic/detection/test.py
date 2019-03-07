@@ -1,0 +1,47 @@
+import cv2
+import numpy as np
+#backsub = cv2.BackgroundSubtractorMOG() #background subtraction to isolate moving cars
+
+cap = cv2.VideoCapture("dataset/video1.avi") #change to destination on your pc 
+#i = 0
+#minArea=1
+
+while True:
+	ret, frame = cap.read() #reads the frame from the capture
+	if (type(frame) == type(None)): #break if there is no video
+		break
+	try:
+		cv2.imshow('Frame',frame)
+#		frame = frame2
+#	line1 = np.array([[100,100],[300,100],[350,200]],np.int32).reshape((-1,1,2))
+#	frame2 = cv2.polylines(frame2,[line1],False,(255,0,0),thickness=2)
+#
+#	cv2.imshow('Frame 2',frame2)
+#
+#    fgmask = backsub.apply(frame, None, 0.01)
+#    erode=cv2.erode(fgmask,None,iterations=3)     #erosion to erase unwanted small contours
+#    moments=cv2.moments(erode,True)               #moments method applied
+#    area=moments['m00']
+#    if moments['m00'] >=minArea:
+#        x=int(moments['m10']/moments['m00'])
+#        y=int (moments['m01']/moments['m00'])
+#        if x>150 and x<160 and y>0 and y<240:       #range of line coordinates for values on left lane
+#            i=i+1
+#            print(i)
+#        elif x>0 and x<480 and y>105 and y<130: #range of line coordinatess for values on right lane
+#            i=i+1
+#            print(i)
+#        print(x,y)
+#        cv2.putText(frame,'COUNT: %r' %i, (10,30), cv2.FONT_HERSHEY_SIMPLEX,
+#                        1, (255, 0, 0), 2)
+#        cv2.imshow("Track", frame)
+#        cv2.imshow("background sub", fgmask)
+#
+#
+#	Shutdown if 'Q' or ESC is pressed
+#		key = cv2.waitKey(30) & 0xff
+#		if key == 27:
+#			break
+#
+#		cap.release() #releases the video file
+#		cv2.destroyAllWindows() #closes the cv2 windows

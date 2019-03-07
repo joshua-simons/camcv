@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/fisherfaces.dir/src/main.cpp.o  -o fisherfaces -rdynamic libopencv_facerec.a /usr/local/lib/libopencv_highgui.so.2.4.10 /usr/local/lib/libopencv_imgproc.so.2.4.10 /usr/local/lib/libopencv_core.so.2.4.10 -Wl,-rpath,/usr/local/lib 

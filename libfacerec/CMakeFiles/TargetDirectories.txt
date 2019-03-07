@@ -1,0 +1,4 @@
+/home/developer/Downloads/bytefish-libfacerec-e1b143d/CMakeFiles/edit_cache.dir
+/home/developer/Downloads/bytefish-libfacerec-e1b143d/CMakeFiles/rebuild_cache.dir
+/home/developer/Downloads/bytefish-libfacerec-e1b143d/CMakeFiles/fisherfaces.dir
+/home/developer/Downloads/bytefish-libfacerec-e1b143d/CMakeFiles/opencv_facerec.dir
